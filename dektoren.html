@@ -27,8 +27,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="cryptotax.html">Cryptotax Flask / Python</a></li>
-                  <li><a class="dropdown-item" href="dektoren.html">Dektoren 2D Game with Lua</a></li>
-                  <li><a class="dropdown-item" href="pong.html">Pong Game with Lua</a></li>
+                  <li><a class="dropdown-item" href="dektoren.html">Dektoren Game LÖVE2D / Lua</a></li>
+                  <li><a class="dropdown-item" href="pong.html">Pong Game LÖVE2D / Lua</a></li>
                   <li><a class="dropdown-item" href="#">More to come soon...</a></li>
                 </ul>
               </li>
@@ -41,12 +41,35 @@
 </head>
   <body>
     <div class="container text-center">
-      <h1 style="text-align:center">Dektoren 2D Platform game with LÖVE Lua</h1>
+      <h1 style="text-align:center">Dektoren 2D Platform game with LÖVE2D Lua</h1>
       <h5 class ="m-4">
+        <div class="text-justify custom">
+          <p class="fs-4 fw-bold"> Description</p>
+          <p>
+          Dektoren is a 2D platform built with LOVE2d with the Lua programming language. The game consists in advancing through the map collecting as many coins as you can without dying by either running out of hearts or falling over. 
+          You can play the game using a keyboard either using a,w,s,d or the left, up, down and right arrows. 
+          The game also allows you to double jump (you can jump with w, up arrow or space). In order to build the game I installed a STI library which can be found in the credits and the program Tiled which helps you to build maps for games.
+          </p>
+          <p>
+          Most of the game decisions I did were based on the art I could fetch that was free and without copyrights. 
+          I started to build the game with less objects but as I progressed I added more and more objects and improved the ones I had by giving sound, changing the art and adding animations. 
+          I wanted to make that look nice so that is why I also learnt to use GIMP a bit in order to modify the art accordingly and split images into different files to show animations. 
+          The code was fairly challenging and I decided to use a library that includes gravity from box2d which seems quite standard from what I have seen in out there. 
+          On some ocassions I went to the discord of Lua to ask for advise as well as reading different documentations. 
+          The part that took me more time was to build objects that were not affected by gravity (movable platform) and I was really proud once I managed it. 
+          I tried to calculate the oposite of the world gravity and added to the object but it either fly above the screen or falled slowly. 
+          At the end I found the kinematic property within the library and changed a few bites of the code which allowed me to successfuly add the object as I wanted.
+          
+          Finally, I have so many ideas to keep building the game which I may do in the future.
+          </p>
+          <p class="fs-4 fw-bold"> Game video</p>
+        </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      
       <div class="ratio ratio-16x9">
       <iframe src="https://www.youtube.com/embed/NWrW3CVtbO8" title="Dektoren 2D Platform Game" allowfullscreen></iframe>
       </div>
+      <p></p>
       <p> Click <a href="https://github.com/AleixMJ/Dektoren-Platformer-Game" target="_blank"> GitHub </a> to check the code</p>
       </h5>
     </div>
